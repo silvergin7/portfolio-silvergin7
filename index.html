@@ -85,13 +85,34 @@
                     </p>
 
                     <p>
-                        <label for="website">Website:</label>'
+                        <label for="website">Website:</label>
                         <input type="url" id="website" name="website" placeholder="https://example.com">
                     </p>
 
                     <p>
                         <label for="phone">Phone:</label>
                         <input type="tel" id="phone" name="phone" placeholder="+46726409202">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message Details</legend>
+
+                    <p>
+                        <label for="subject">Subject:</label>
+                        <select name="subject" id="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="job">Job Opportunity</option>
+                            <option value="blockchain">Blockchain Discussion</option>
+                            <option value="general">General Question</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" rows="5" required
+                            placeholder="Tell me about your project or question..."></textarea>
                     </p>
                 </fieldset>
             </form>
