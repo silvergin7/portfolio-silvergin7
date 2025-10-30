@@ -135,3 +135,12 @@ nav a:focus {
     line-height: 1.6;
     text-align: left;
 }
+
+.experience {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px 0;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
