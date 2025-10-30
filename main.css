@@ -91,8 +91,14 @@ nav a {
     letter-spacing: 1px;
 }
 
-nav a:hover,
-nav a:focus {
+nav a:hover {
     /* Gör det tydligare vilken länk man håller på */
     background: #d1d1d1;
+}
+
+nav a:focus {
+    /* Extra tydlig markering när man tabbar eller håller på länkar */
+    background: #d1d1d1;
+    outline: 2px solid #185adb;
+    outline-offset: 2px;
 }
