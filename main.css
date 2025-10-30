@@ -72,7 +72,7 @@ nav ul {
     list-style: none;
     background: #fff;
     border-radius: 0.75rem;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 8px 0;
 }
 
 nav li {
@@ -101,4 +101,13 @@ nav a:focus {
     background: #d1d1d1;
     outline: 2px solid #185adb;
     outline-offset: 2px;
+}
+
+.aboutme {
+    margin-bottom: 2rem;
+    text-align: center;
+    background: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px 0;
 }
