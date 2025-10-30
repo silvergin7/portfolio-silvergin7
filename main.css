@@ -121,11 +121,17 @@ nav a:focus {
 }
 
 .aboutme h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
 }
 
 .aboutme h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
+}
+
+.aboutme p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
 }
