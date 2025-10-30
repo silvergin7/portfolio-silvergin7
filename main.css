@@ -119,3 +119,8 @@ nav a:focus {
     border-radius: 50%;
     box-shadow: 0 1px 4px 0;
 }
+
+.aboutme h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
