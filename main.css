@@ -111,3 +111,11 @@ nav a:focus {
     border-radius: 1rem;
     box-shadow: 0 2px 8px 0;
 }
+
+.aboutme img {
+    display: block;
+    margin: 0 auto 1.25rem;
+    width: 110px;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px 0;
+}
