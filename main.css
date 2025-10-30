@@ -59,6 +59,10 @@ header {
     margin-bottom: 2rem;
 }
 
+/* Jag kör öppen meny istället för hamburgare eftersom vi bara lärt oss html/css hittills.
+   Fokuserar på stora knappar och tydliga färger så alla hittar. */
+
+
 nav ul {
     /* Här gör jag meny-länkarna snyggare på mobilen. */
     display: flex;
