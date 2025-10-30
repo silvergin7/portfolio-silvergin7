@@ -46,3 +46,10 @@ h6 {
 #__next {
     isolation: isolate;
 }
+
+body {
+    font-family: 'arial', sans-serif;
+    background-color: #f8f9fa;
+    padding: 1.25rem 0.75rem;
+    min-height: 100vh;
+}
