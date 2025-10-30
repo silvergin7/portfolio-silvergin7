@@ -169,6 +169,10 @@ nav a:focus {
     margin-bottom: 0.5rem;
 }
 
+.projects article {
+    background: #f8f9fa;
+}
+
 .projects article h3 {
     font-size: 1.05rem;
     margin-bottom: 0.5rem;
