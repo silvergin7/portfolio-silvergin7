@@ -166,14 +166,25 @@ nav a:focus {
 
 .projects h2 {
     font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.projects .funicular {
+    background: #f8f9fa;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 8px 0;
+}
+
+.projects .funicular h3 {
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
-.projects article {
-    background: #f8f9fa;
-}
-
-.projects article h3 {
-    font-size: 1.05rem;
+.projects .funicular p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
     margin-bottom: 0.5rem;
 }
