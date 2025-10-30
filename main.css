@@ -60,6 +60,7 @@ header {
 }
 
 nav ul {
+    /* Här gör jag meny-länkarna snyggare på mobilen. */
     display: flex;
     justify-content: space-between;
     padding: 0;
