@@ -144,3 +144,8 @@ nav a:focus {
     margin-bottom: 2rem;
     text-align: center;
 }
+
+.experience h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
