@@ -71,7 +71,7 @@ nav ul {
     gap: 1rem;
     list-style: none;
     background: #fff;
-    border-radius: 0.75rem;
+    border-radius: 1rem;
     box-shadow: 0 2px 8px 0;
 }
 
@@ -85,7 +85,7 @@ nav a {
     display: block;
     padding: 1rem 0;
     color: inherit;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
@@ -100,7 +100,6 @@ nav a:focus {
     /* Extra tydlig markering när man tabbar eller håller på länkar */
     background: #d1d1d1;
     outline: 2px solid #185adb;
-    outline-offset: 2px;
 }
 
 .aboutme {
@@ -154,4 +153,16 @@ nav a:focus {
     font-size: 1rem;
     line-height: 1.6;
     text-align: left;
+}
+
+.projects {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px 0;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.projects h2 {
+    text-align: center;
 }
