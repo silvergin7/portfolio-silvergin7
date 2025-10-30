@@ -57,3 +57,13 @@ body {
 header {
     margin-bottom: 2rem;
 }
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    background: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+}
