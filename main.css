@@ -263,8 +263,14 @@ nav a:focus {
     width: 100%;
     max-width: 320px;
     padding: 0.6em 0.7rem;
-    border: 1px solid #d1d1d1;
     border-radius: 1rem;
+}
+
+.contact input:focus,
+.contact select:focus,
+.contact textarea:focus {
+    outline: 2px solid #185adb;
+    border-color: #185adb;
 }
 
 .contact legend {
