@@ -343,15 +343,18 @@ footer {
     }
 
     .projects {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1.5rem;
-        justify-content: flex-start;
+    }
+
+    .projects h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-bottom: 1.2rem;
     }
 
     .projects article {
-        flex: 1 1 220px;
-        max-width: 330px;
         margin-bottom: 0;
     }
 
