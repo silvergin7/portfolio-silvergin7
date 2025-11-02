@@ -189,3 +189,27 @@ nav a:focus {
     text-align: left;
     margin-bottom: 0.5rem;
 }
+
+.projects img {
+    width: 2.5em;
+    height: 2.5em;
+    vertical-align: middle;
+    margin-right: 0.4em;
+    display: inline-block;
+}
+
+.projects a {
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.projects a:hover {
+    background: #d1d1d1;
+}
+
+.projects a:focus {
+    background: #d1d1d1;
+    outline: 2px solid #185adb;
+}
