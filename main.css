@@ -284,6 +284,26 @@ nav a:focus {
     cursor: pointer;
 }
 
+.button-wrapper p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 0.3rem;
+}
+
+.button-wrapper label[for="newsletter"] {
+    text-align: center;
+    width: auto;
+}
+
+.button-wrapper input[type="checkbox"] {
+    width: 1.1em;
+    height: 1.1em;
+    margin: 0 auto;
+    display: block;
+}
+
 .contact button[type="submit"] {
     background: #185adb;
     color: #fff;
