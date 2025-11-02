@@ -312,3 +312,13 @@ aside {
 footer {
     text-align: center;
 }
+
+@media (min-width: 600px) {
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 900px) {}
