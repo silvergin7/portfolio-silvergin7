@@ -389,6 +389,47 @@ footer {
         height: 80px !important;
     }
 
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        max-width: 800px;
+        margin: 0 auto 2rem auto;
+        align-items: start;
+    }
+
+    .contact-wrapper fieldset {
+        width: 100%;
+    }
+
+    .subjects {
+        margin-top: 2rem;
+    }
+
+    .messages {
+        margin-top: 2.4rem;
+    }
+
+    .button-wrapper {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-wrapper p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 0.3rem;
+    }
+
+    .button-wrapper label[for="newsletter"] {
+        text-align: center;
+        width: auto;
+    }
+
     aside {
         flex: 1;
         min-width: 250px;
