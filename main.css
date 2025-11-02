@@ -215,13 +215,13 @@ nav a:focus {
 }
 
 .projects .ewwicon {
-    width: 3em;
-    height: 3em;
+    width: 3rem;
+    height: 3rem;
 }
 
 .projects .xicon {
-    width: 1.7em;
-    height: 1.7em;
+    width: 1.7rem;
+    height: 1.7rem;
 }
 
 .contact {
@@ -277,4 +277,22 @@ nav a:focus {
 .contact legend {
     font-weight: 600;
     text-align: left;
+}
+
+.contact input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.contact button[type="submit"] {
+    background: #185adb;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.contact button[type="submit"]:hover {
+    background: #13b05b;
 }
