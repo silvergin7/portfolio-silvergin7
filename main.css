@@ -167,7 +167,7 @@ nav a:focus {
 
 .projects h2 {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .projects article {
@@ -222,4 +222,37 @@ nav a:focus {
 .projects .xicon {
     width: 1.7em;
     height: 1.7em;
+}
+
+.contact {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px 0;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact form,
+.contact fieldset {
+    border: none;
+    padding: 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    text-align: left;
 }
