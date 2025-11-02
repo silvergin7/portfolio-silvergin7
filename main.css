@@ -242,6 +242,7 @@ nav a:focus {
 .contact fieldset {
     border: none;
     padding: 0;
+    margin-bottom: 1.5rem;
 }
 
 .contact form {
@@ -252,7 +253,21 @@ nav a:focus {
 
 .contact label {
     display: block;
-    font-weight: 500;
-    margin-bottom: 0.3rem;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+    width: 100%;
+    max-width: 320px;
+    padding: 0.6em 0.7rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 1rem;
+}
+
+.contact legend {
+    font-weight: 600;
     text-align: left;
 }
