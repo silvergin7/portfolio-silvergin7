@@ -356,6 +356,17 @@ footer {
 
     .projects article {
         margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .funicon,
+    .xicon,
+    .ewwicon {
+        width: 80px !important;
+        height: 80px !important;
     }
 
     aside {
@@ -364,5 +375,4 @@ footer {
         max-width: 300px;
         margin-bottom: 0;
     }
-
 }
