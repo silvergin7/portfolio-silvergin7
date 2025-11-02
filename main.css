@@ -170,7 +170,7 @@ nav a:focus {
     margin-bottom: 1rem;
 }
 
-.projects .funicular {
+.projects article {
     background: #f8f9fa;
     border-radius: 1rem;
     padding: 1.5rem 1rem;
@@ -178,12 +178,12 @@ nav a:focus {
     box-shadow: 0 2px 8px 0;
 }
 
-.projects .funicular h3 {
+.projects article h3 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
-.projects .funicular p {
+.projects article p {
     font-size: 1rem;
     line-height: 1.6;
     text-align: left;
