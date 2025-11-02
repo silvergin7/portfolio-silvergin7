@@ -296,3 +296,14 @@ nav a:focus {
 .contact button[type="submit"]:hover {
     background: #13b05b;
 }
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 8px 0;
+}
