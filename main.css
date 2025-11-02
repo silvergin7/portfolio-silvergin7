@@ -262,7 +262,6 @@ nav a:focus {
 .contact select,
 .contact textarea {
     width: 100%;
-    max-width: 320px;
     padding: 0.6em 0.7rem;
     border-radius: 1rem;
     border: 1px solid #d1d1d1;
@@ -408,6 +407,10 @@ footer {
 
     .messages {
         margin-top: 2.4rem;
+    }
+
+    .contact textarea {
+        height: 12.5rem;
     }
 
     .button-wrapper {
