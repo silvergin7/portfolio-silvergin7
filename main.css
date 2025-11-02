@@ -434,9 +434,7 @@ footer {
     }
 
     aside {
-        flex: 1;
         min-width: 250px;
         max-width: 300px;
-        margin-bottom: 0;
     }
 }
