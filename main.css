@@ -328,6 +328,17 @@ aside {
     box-shadow: 0 2px 8px 0;
 }
 
+aside img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+aside .aside-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
 footer {
     text-align: center;
 }
