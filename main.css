@@ -1,3 +1,4 @@
+/* ----- RESET & GLOBAL STYLES ----- */
 /* Josh Comeau's Modern CSS Reset */
 /* https://www.joshwcomeau.com/css/custom-css-reset/ */
 
@@ -47,24 +48,26 @@ h6 {
     isolation: isolate;
 }
 
+/* ======= Custom styles for my portfolio site (HTML & CSS course, Medieinstitutet) ======= */
+
 body {
-    /* Här sätter jag standard för hela sidan. min-height: 100vh gör att sidan alltid fyller hela mobilskärmen. */
+    /* Here I set the base styles for the whole page. min-height: 100vh ensures the page always fills the entire mobile screen. */
     font-family: 'arial', sans-serif;
     background-color: #f8f9fa;
     padding: 1.25rem 0.75rem;
     min-height: 100vh;
 }
 
+/* ----- HEADER ----- */
 header {
     margin-bottom: 2rem;
 }
 
-/* Jag kör öppen meny istället för hamburgare eftersom vi bara lärt oss html/css hittills.
-   Fokuserar på stora knappar och tydliga färger så alla hittar. */
-
+/* I use an open menu instead of a hamburger menu since we’ve only learned HTML/CSS so far.
+   Focused on large buttons and clear colors so everyone can navigate easily. */
 
 nav ul {
-    /* Här gör jag meny-länkarna snyggare på mobilen. */
+    /* Here I style the menu links to look good on mobile devices. */
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -81,7 +84,7 @@ nav li {
 }
 
 nav a {
-    /* Gör meny-knapparna större och förtydligar menyn */
+    /* Make the menu buttons larger and emphasize the navigation menu */
     display: block;
     padding: 1rem 0;
     color: inherit;
@@ -93,16 +96,17 @@ nav a {
 }
 
 nav a:hover {
-    /* Gör det tydligare vilken länk man håller på */
+    /* Make it clearer which link the user is hovering over */
     background: #d1d1d1;
 }
 
 nav a:focus {
-    /* Extra tydlig markering när man tabbar eller håller på länkar */
+    /* Extra clear highlight when tabbing or hovering over links */
     background: #d1d1d1;
     outline: 2px solid #185adb;
 }
 
+/* ----- ABOUT ME SECTION ----- */
 .aboutme {
     margin-bottom: 2rem;
     text-align: center;
@@ -137,6 +141,7 @@ nav a:focus {
     text-align: left;
 }
 
+/* ----- EXPERIENCE SECTION ----- */
 .experience {
     background: #fff;
     border-radius: 1rem;
@@ -157,6 +162,7 @@ nav a:focus {
     text-align: left;
 }
 
+/* ----- PROJECTS SECTION ----- */
 .projects {
     background: #fff;
     border-radius: 1rem;
@@ -225,6 +231,7 @@ nav a:focus {
     height: 1.7rem;
 }
 
+/* ----- CONTACT SECTION ----- */
 .contact {
     background: #fff;
     border-radius: 1rem;
@@ -317,6 +324,7 @@ nav a:focus {
     background: #13b05b;
 }
 
+/* ----- ASIDE ----- */
 aside {
     display: flex;
     flex-direction: column;
@@ -339,21 +347,23 @@ aside .aside-row {
     gap: 0.4em;
 }
 
+/* ----- FOOTER ----- */
 footer {
     text-align: center;
 }
 
+/* ----- MEDIA QUERIES ----- */
 @media (min-width: 320px) and (max-width: 460px) {
 
-    /* Använder em istället för rem på font-size i denna media query, det såg bättre ut när jag testade */
+    /* I use em instead of rem for font-size in this media query, it looked better when I tested it */
     nav ul {
         flex-wrap: nowrap;
         gap: 0.1rem;
         font-size: 0.90em;
         overflow-x: scroll;
-        /* gör att användaren kan dra åt sidan om det skulle bli för trångt */
+        /* Allows the user to scroll sideways if the layout becomes too crowded */
         white-space: nowrap;
-        /* förhindrar radbrytning inom ul */
+        /* Prevents line breaks within the unordered list (ul) */
         scrollbar-width: thick;
         scrollbar-color: #13b05b #fff;
     }
