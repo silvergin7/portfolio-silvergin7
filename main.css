@@ -344,6 +344,8 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 460px) {
+
+    /* Använder em istället för rem på font-size i denna media query, det såg bättre ut när jag testade */
     nav ul {
         flex-wrap: nowrap;
         gap: 0.1rem;
