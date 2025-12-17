@@ -324,6 +324,11 @@ nav a:focus {
     background: #13b05b;
 }
 
+.contact button[type="submit"]:focus {
+    outline: 2px solid #185adb;
+    outline-offset: 2px;
+}
+
 /* ----- ASIDE ----- */
 aside {
     display: flex;
