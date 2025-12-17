@@ -50,10 +50,57 @@ h6 {
 
 /* ======= Custom styles for my portfolio site (HTML & CSS course, Medieinstitutet) ======= */
 
+:root {
+    color-scheme: light dark;
+
+    /* Light theme (default) */
+    --bg-page: #f8f9fa;
+    --bg-card: #ffffff;
+    --bg-card-alt: #f1f3f5;
+    --text-main: #111827;
+    --text-muted: #4b5563;
+
+    --primary: #185adb;
+    --primary-soft: #e0edff;
+    --accent: #13b05b;
+
+    --border-subtle: #d1d5db;
+    --shadow-soft: 0 2px 8px 0 rgba(15, 23, 42, 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Bakgrunder – mer neutral, lite varmare */
+        --bg-page: #111827;
+        /* mörk grå/blå, inte kolsvart */
+        --bg-card: #1f2933;
+        /* något ljusare än bakgrunden */
+        --bg-card-alt: #111827;
+        /* kan användas på inner-cards */
+
+        /* Text – mjuk, inte kritvit */
+        --text-main: #e5e7eb;
+        --text-muted: #9ca3af;
+
+        /* Accent – dämpad cyan/grön, inte neon */
+        --primary: #34d399;
+        /* grön-blå mintig ton */
+        --primary-soft: #064e3b;
+        /* mörk grön bakgrund till hover/focus */
+        --accent: #22c55e;
+        /* används på hover t.ex. knappen */
+
+        /* Border/shadow – subtila, inte starka */
+        --border-subtle: #374151;
+        --shadow-soft: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+
 body {
     /* Here I set the base styles for the whole page. min-height: 100vh ensures the page always fills the entire mobile screen. */
     font-family: 'arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: var(--bg-page);
+    color: var(--text-main);
     padding: 1.25rem 0.75rem;
     min-height: 100vh;
 }
@@ -73,9 +120,9 @@ nav ul {
     padding: 0;
     gap: 1rem;
     list-style: none;
-    background: #fff;
+    background: var(--bg-card);
     border-radius: 1rem;
-    box-shadow: 0 2px 8px 0;
+    box-shadow: var(--shadow-soft);
 }
 
 nav li {
@@ -97,23 +144,31 @@ nav a {
 
 nav a:hover {
     /* Make it clearer which link the user is hovering over */
-    background: #d1d1d1;
+    background: var(--primary-soft);
 }
 
 nav a:focus {
     /* Extra clear highlight when tabbing or hovering over links */
-    background: #d1d1d1;
-    outline: 2px solid #185adb;
+    background: var(--primary-soft);
+    outline: 2px solid var(--primary);
+}
+
+/* ----- JOINT SECTION ----- */
+.aboutme,
+.experience,
+.projects,
+.contact,
+aside {
+    background: var(--bg-card);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-soft);
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
 }
 
 /* ----- ABOUT ME SECTION ----- */
 .aboutme {
-    margin-bottom: 2rem;
     text-align: center;
-    background: #fff;
-    padding: 1.5rem 1rem;
-    border-radius: 1rem;
-    box-shadow: 0 2px 8px 0;
 }
 
 .aboutme img {
@@ -143,11 +198,6 @@ nav a:focus {
 
 /* ----- EXPERIENCE SECTION ----- */
 .experience {
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 2px 8px 0;
-    padding: 1.5rem 1rem;
-    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -164,11 +214,6 @@ nav a:focus {
 
 /* ----- PROJECTS SECTION ----- */
 .projects {
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 2px 8px 0;
-    padding: 1.5rem 1rem;
-    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -178,11 +223,11 @@ nav a:focus {
 }
 
 .projects article {
-    background: #f8f9fa;
+    background: var(--bg-card-alt);
     border-radius: 1rem;
     padding: 1.5rem 1rem;
     margin-bottom: 0.5rem;
-    box-shadow: 0 2px 8px 0;
+    box-shadow: var(--shadow-soft);
 }
 
 .projects article h3 {
@@ -195,6 +240,7 @@ nav a:focus {
     line-height: 1.6;
     text-align: left;
     margin-bottom: 0.5rem;
+    color: var(--text-muted);
 }
 
 .projects img {
@@ -210,15 +256,16 @@ nav a:focus {
     border-radius: 1rem;
     font-weight: 600;
     padding: 1rem 0;
+    color: var(--primary);
 }
 
 .projects a:hover {
-    background: #d1d1d1;
+    background: var(--primary-soft);
 }
 
 .projects a:focus {
-    background: #d1d1d1;
-    outline: 2px solid #185adb;
+    background: var(--primary-soft);
+    outline: 2px solid var(--primary);
 }
 
 .projects .ewwicon {
@@ -232,14 +279,6 @@ nav a:focus {
 }
 
 /* ----- CONTACT SECTION ----- */
-.contact {
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 2px 8px 0;
-    padding: 1.5rem 1rem;
-    margin-bottom: 2rem;
-}
-
 .contact h2 {
     text-align: center;
     font-size: 1.2rem;
@@ -271,14 +310,16 @@ nav a:focus {
     width: 100%;
     padding: 0.6em 0.7rem;
     border-radius: 1rem;
-    border: 1px solid #d1d1d1;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-card);
+    color: var(--text-main);
 }
 
 .contact input:focus,
 .contact select:focus,
 .contact textarea:focus {
-    outline: 2px solid #185adb;
-    border-color: #185adb;
+    outline: 2px solid var(--primary);
+    border-color: var(--primary);
 }
 
 .contact legend {
@@ -311,7 +352,7 @@ nav a:focus {
 }
 
 .contact button[type="submit"] {
-    background: #185adb;
+    background: var(--primary);
     color: #fff;
     padding: 0.8rem 2rem;
     border-radius: 1rem;
@@ -321,11 +362,11 @@ nav a:focus {
 }
 
 .contact button[type="submit"]:hover {
-    background: #13b05b;
+    background: var(--accent);
 }
 
 .contact button[type="submit"]:focus {
-    outline: 2px solid #185adb;
+    outline: 2px solid var(--primary);
     outline-offset: 2px;
 }
 
@@ -334,11 +375,6 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-bottom: 2rem;
-    background: #fff;
-    border-radius: 1rem;
-    padding: 1.5rem 1rem;
-    box-shadow: 0 2px 8px 0;
 }
 
 aside img {
@@ -370,7 +406,7 @@ footer {
         white-space: nowrap;
         /* Prevents line breaks within the unordered list (ul) */
         scrollbar-width: thick;
-        scrollbar-color: #13b05b #fff;
+        scrollbar-color: var(--accent) var(--bg-card);
     }
 
     nav li {
