@@ -531,7 +531,23 @@ footer {
     }
 
     aside {
-        min-width: 250px;
-        max-width: 300px;
+        max-width: 800px;
+        margin: 0 auto 2rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
     }
+
+    aside>section {
+        flex: 1 1 0;
+    }
+
+    .aside-contact {
+        margin-left: 7rem;
+    }
+
+
 }
