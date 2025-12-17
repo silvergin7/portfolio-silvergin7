@@ -21,10 +21,9 @@ This repository contains my personal developer portfolio built with semantic HTM
 
 ## Project Structure
 
-.
-├── index.html # Main portfolio page
-├── main.css # Global styles, reset, layout and themes
-└── images/ # Profile photo, project logos, social icons
+- index.html – Main portfolio page  
+- main.css – Global styles, reset, layout and themes  
+- images/ – Profile photo, project logos, social icons
 
 ## Running the Project
 
